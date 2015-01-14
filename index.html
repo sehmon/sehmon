@@ -4,6 +4,21 @@
         <title>Sehmon Burnam</title>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Google Maps Integration -->
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function initialize() {
+                var map_canvas = document.getElementById('map_canvas');
+                var map_options = {
+                    center: new google.maps.LatLng(40.6176103, -74.3574461),
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(map_canvas, map_options);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     </head> 
     <!-- what I want to talk about:
     Who I am 
@@ -22,10 +37,13 @@
         
         <div id="header">
             <!-- Start of Header -->
-
+            <div id="headertext">
             <h2>Sehmon Burnam</h2>
+            <img id="headerimg" src="img/SehmonB.jpg"/>
             <h4>Hacker. Engineer. Learner.</h4>
             <p>Someone who wants to learn more about the world</p>
+
+            </div>
 
             <ul id="navlinks">
 
@@ -54,12 +72,10 @@
                 <h3>Education</h3>
                     <h4>Union County Magnet High School</h4>
                         <p> 
-                        Union County Magnet High School is a public Magnet High School Located in Scotch Plains, NJ. With a curriculm based in 
-                        Engineering and technology, UCMHS hosts the top students in Union County, and gives them an extensive engineering background
-                        based on Math, Science, and Project-Based learning. More info at <link href="http://www.ucvts.tec.nj.us">www.ucvts.tec.nj.us</link>
+                        Union County Magnet High School is a public Magnet High School Located in Scotch Plains, NJ. With a curriculm based in Engineering and technology, UCMHS hosts the top students in Union County, and gives them an extensive engineering background based on Math, Science, and Project-Based learning. More info at <link href="http://www.ucvts.tec.nj.us">www.ucvts.tec.nj.us</link>
                         </p>
                         <!-- Insert Google Maps Block Here -->
-
+                            <div id="map_canvas"></div>
                         <!-- Mark favorite classes in bold -->
                         <table>
                             <thead>
@@ -77,11 +93,7 @@
                                     <td>AP Calculus AB</td>
                                     <td>2013</td>
                                 </tr>
-                                <tr>
-                                    <td>AP Physics C: Mechanics</td>
-                                    <td>2013</td>
-                                </tr>
-                                <tr>
+                               <tr>
                                     <td>Introdution to Programming</td>
                                     <td>2013</td>
                                 </tr>
@@ -101,10 +113,7 @@
             <div id="experience">
                 <h2>Experience</h2>
                     <h3>UCVTS STA Internship: 2014-2015</h3>
-                    <p>The UCVTS STA Internship is a selective program at UCVTS meant to teach students about how large-scale technology departments
-                    are managed, organized, and maintained. The top scoring applicants, a combination of technology grades from Freshmen through Junior 
-                    years, teacher recommendations, attendance and an interview process, help determine the new Student Technology Assistants. During the 
-                    school year students will spend a portion of their day working as interns for the technology department.
+                    <p>The UCVTS STA Internship is a selective program at UCVTS meant to teach students about how large-scale technology departments are managed, organized, and maintained. The top scoring applicants, a combination of technology grades from Freshmen through Junior years, teacher recommendations, attendance and an interview process, help determine the new Student Technology Assistants. During the school year students will spend a portion of their day working as interns for the technology department.
                     </p>
 
                     <h3>Programming Experience</h3>

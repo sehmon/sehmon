@@ -12,16 +12,28 @@ html {
 }
 **/
 #header {
-    padding:30px 100px;
+    padding:30px 70px;
+}
+
+#headertext {
+    text-align:center;
+}
+
+#headerimg {
+    width:15%;
+    height:15%;
+    border-radius:100%;
 }
 
 #navlinks {
-   list-style-type:none; 
-   text-align:right;
+    list-style-type:none; 
+    text-align:center;
+    display: block;
 }
 
 #navlinks li {
     display:inline;
+    text-align:center;
 }
 
 #navlinks li a {
@@ -30,5 +42,10 @@ html {
 }
 
 #content {
-    padding: 0px 80px;
+    padding: 0px 130px;
+}
+
+#map_canvas {
+    width: 50%;
+    height: 400px;
 }
