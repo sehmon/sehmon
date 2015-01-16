@@ -3,7 +3,7 @@
 body, div, h1, h2, h3, h4, h5, h6, p, ul, img {
     margin:0px; padding:0px; 
     font-family: Lato, Arial;
-    /** border:1px solid red; **/
+/**    border:1px solid red; **/
 }
 
 
@@ -66,19 +66,18 @@ html {
     padding: 0px 70px;
 }
 
-#about {
-    overflow:auto; 
+#aboutimg {
+    width:20%;
+    height:20%;
+    border-radius:100%;
+    display:block;
+    margin: 0px auto;
 }
 
 #abouttext {
     margin:auto;
-}
-
-#aboutimg {
-    width:20%;
-    height:20%;
-    display:block;
-    float:right;
+    text-align:center;
+    padding:10px 40px 0 40px;
 }
 
 #education{
