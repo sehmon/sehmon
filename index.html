@@ -4,21 +4,7 @@
         <title>Sehmon Burnam</title>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-
-        <!-- Google Maps Integration -->
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script>
-            function initialize() {
-                var map_canvas = document.getElementById('map_canvas');
-                var map_options = {
-                    center: new google.maps.LatLng(40.6176103, -74.3574461),
-                    zoom: 16,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(map_canvas, map_options);
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
+        <script src="js/jquery-1.11.2.min.js"></script>
     </head> 
     <!-- what I want to talk about:
     Who I am 
@@ -39,7 +25,6 @@
             <!-- Start of Header -->
             <div id="headertext">
             <h2>Sehmon Burnam</h2>
-            <img id="headerimg" src="img/SehmonB.jpg"/>
             <h4>Hacker. Engineer. Learner.</h4>
             <p>Someone who wants to learn more about the world</p>
 
@@ -47,13 +32,12 @@
 
             <ul id="navlinks">
 
-                <li><a href="#">About</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Links</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#links">Links</a></li>
             </ul>
-            <hr>
 
         </div><!-- End of Header -->
 
@@ -61,28 +45,22 @@
             <!-- Start of Content -->
 
             <div id="about">
-                <h3>About</h3>
-                <p>I'm Sehmon Burnam, and I am currently a student at Union County Magnet High School in Scotch Plains NJ. I enjoy programming playing music, and reading. I love building things, and in college I plan on majoring in Electrical Engineering while pursuing a Minor in Computer Science.
-
-                <!-- Picture goes here -->
+                <h2>About</h2>
+                <img id="aboutimg" src="img/SehmonB.jpg"/>
+                <p id="abouttext">I'm Sehmon Burnam, and I am currently a student at Union County Magnet High School in Scotch Plains NJ. I enjoy programming, playing music, and reading. I love building things, and in college I plan on majoring in Electrical Engineering while pursuing a Minor in Computer Science.
 
             </div>
 
             <div id="education">
-                <h3>Education</h3>
+                <h2>Education</h2>
                     <h4>Union County Magnet High School</h4>
                         <p> 
-                        Union County Magnet High School is a public Magnet High School Located in Scotch Plains, NJ. With a curriculm based in Engineering and technology, UCMHS hosts the top students in Union County, and gives them an extensive engineering background based on Math, Science, and Project-Based learning. More info at <link href="http://www.ucvts.tec.nj.us">www.ucvts.tec.nj.us</link>
-                        </p>
-                        <!-- Insert Google Maps Block Here -->
-                            <div id="map_canvas"></div>
-                        <!-- Mark favorite classes in bold -->
+                        Union County Magnet High School is a public Magnet High School Located in Scotch Plains, NJ. With a curriculm based in Engineering and technology, UCMHS hosts the top students in Union County, and gives them an extensive engineering education based in Math, Science, and Project-Based learning. More info at <a href="http://www.ucvts.tec.nj.us">www.ucvts.tec.nj.us</a></p>
+
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Class</td>
-                                    <td>Year</td>
-                                </tr>
+                                    <td colspan="2"><h5 id="favclasstitle">Favorite Classes</h5></td>
                             </thead>
                             <tbody>
                                 <tr>
@@ -113,35 +91,40 @@
             <div id="experience">
                 <h2>Experience</h2>
                     <h3>UCVTS STA Internship: 2014-2015</h3>
-                    <p>The UCVTS STA Internship is a selective program at UCVTS meant to teach students about how large-scale technology departments are managed, organized, and maintained. The top scoring applicants, a combination of technology grades from Freshmen through Junior years, teacher recommendations, attendance and an interview process, help determine the new Student Technology Assistants. During the school year students will spend a portion of their day working as interns for the technology department.
+                    <p>The UCVTS STA Internship is a selective program at UCVTS meant to teach students about how large-scale technology departments are managed, organized, and maintained. A combination of technology grades from Freshmen through Junior years, teacher recommendations, attendance and an interview process, help determine the new Student Technology Assistants. During the school year students will spend a portion of their day working as interns for the technology department.
                     </p>
 
+                    <div id="languagediv">
                     <h3>Programming Experience</h3>
+                        <div>
                         <h5>Languages Proficient In:</h5>
                             <ul>
                                 <li>Java</li>
                                 <li>Python</li>
                                 <li>Android</li>
                                 <li>HTML & CSS</li>
-                                <li>Bash</li>
                                 <li>Processing</li>
                             </ul>
-
+                        </div><!-- End of Language Div -->
+                        <div>
                         <h5>Technologies Proficient in:</h5>
                             <ul>
                                 <li>Linux</li>
                                 <li>Git</li>
-                                <li>Flask</li>
                                 <li>Vim</li>
+                                <li>Computer Aided Drafting (CAD)</li>
                             </ul>
-            </div>       
+
+                </div><!-- End of Technology Div -->
+                </div>
+            </div><!-- End of Experience Div -->
   
             <div id="projects">
                 
                 <h2>Projects</h2>
 
                 <h3>What Am I Eating</h3>
-                    <p>What am I eating was the first android app i created at a hackathon. "What Am I Eating?" helps you to understand what food labels actually mean. Using the FoodEssentials API provided by Mashery, "What Am I Eating?" allows you to scan a barcode, then instantly have access to data about the product such as Additives and Nutrition Facts. If you aren't sure what a specific ingredient is, you can simply tap on the item to bring up more information about it. This app was made at HackRU, a 24 hour programming meetup hosted at Rutgers University.  *HackRU Top 10 project *HackRU Best Use of A Mashery API. Link: http://masherydev.tumblr.com/post/83738427637/hackru-a-scarlet-night-of-hacking. 
+                    <p>What am I eating was the first android app i created at a hackathon. "What Am I Eating?" helps you to understand what food labels actually mean. Using the FoodEssentials API provided by Mashery, "What Am I Eating?" allows you to scan a barcode, then instantly have access to data about the product such as Additives and Nutrition Facts. If you aren't sure what a specific ingredient is, you can simply tap on the item to bring up more information about it. This app was made at HackRU, a 24 hour programming meetup hosted at Rutgers University. <br><br> *HackRU Top 10 project <br><br>*HackRU Best Use of A Mashery API.<br><br> See what they wrote about me <a href="http://masherydev.tumblr.com/post/83738427637/hackru-a-scarlet-night-of-hacking">here</a>
                    </p>
 
                <h3>MileTracker</h3>

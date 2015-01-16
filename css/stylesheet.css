@@ -3,16 +3,30 @@
 body, div, h1, h2, h3, h4, h5, h6, p, ul, img {
     margin:0px; padding:0px; 
     font-family: Lato, Arial;
+    /** border:1px solid red; **/
 }
 
 
-/**
 html {
+    /** Blue **/
+    background-color:#2c3e50;
+}
+
+#main {
+    background-color:#2c3e50;
+}
+
+#content > div {
+    margin:10px;
+    padding:25px;
+    /** White **/
     background-color:#ecf0f1;
 }
-**/
+
 #header {
-    padding:30px 70px;
+    padding-top:15px;
+    /** White **/
+    background-color:#ecf0f1;
 }
 
 #headertext {
@@ -20,32 +34,94 @@ html {
 }
 
 #headerimg {
-    width:15%;
-    height:15%;
+    width:12%;
+    height:12%;
     border-radius:100%;
 }
 
 #navlinks {
+    margin-top:10px;
     list-style-type:none; 
     text-align:center;
     display: block;
+    background-color:#7f8c8d;
 }
 
 #navlinks li {
     display:inline;
     text-align:center;
+    margin: 0px 20px;
+    text-decoration:none;
 }
 
 #navlinks li a {
     text-decoration:none;
     font-size: 20px;
+    color:#ecf0f1;
 }
+
+/** Add Hover Effect for NavLinks **/
 
 #content {
-    padding: 0px 130px;
+    padding: 0px 70px;
 }
 
-#map_canvas {
-    width: 50%;
-    height: 400px;
+#about {
+    overflow:auto; 
+}
+
+#abouttext {
+    margin:auto;
+}
+
+#aboutimg {
+    width:20%;
+    height:20%;
+    display:block;
+    float:right;
+}
+
+#education{
+    overflow:auto;
+}
+
+#education h4 {
+    text-align:center;
+    margin: 10px 0px;
+}
+
+#education table {
+    margin:25px auto;
+}
+
+#favclasstitle {
+    text-align:center;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+#experience h3 {
+    text-align:center; 
+    margin:15px;
+}
+
+#languagediv {
+    text-align:center;
+    padding:0;
+    margin:0;
+}
+
+#languagediv div {
+    display:inline-block;
+    vertical-align:top;
+    text-align:left;
+    margin:0 30px;
+}
+
+#projects h3 {
+    margin:15px;
+}
+
+#projects p {
+    padding:15px;
 }
