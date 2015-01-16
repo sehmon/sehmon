@@ -130,6 +130,10 @@ html {
     list-style-type:none;
 }
 
+#links ul li {
+    margin:5px 0;
+}
+
 #footerp {
     /** White **/
     color:#ecf0f1;
