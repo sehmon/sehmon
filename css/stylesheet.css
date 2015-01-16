@@ -125,3 +125,7 @@ html {
 #projects p {
     padding:15px;
 }
+
+#links ul {
+    list-style-type:none;
+}
