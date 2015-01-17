@@ -107,8 +107,12 @@ html {
 #languagediv div {
     display:inline-block;
     vertical-align:top;
-    text-align:left;
+    text-align:center;
     margin:0 30px;
+}
+
+#languagediv div ul {
+    list-style-type:none;
 }
 
 #projects h3 {
