@@ -117,11 +117,39 @@ html {
 }
 
 #projects h3 {
-    margin:15px;
+    margin:25px;
+    text-align:center;
+    font-size: 30px;
 }
 
 #projects p {
     padding:15px;
+}
+
+#projects img {
+    text-align:center;
+    margin: 0px auto;
+    display:block;
+}
+
+#projects hr {
+    margin: 20px;
+}
+
+#eatingimg {
+    width: 500px;
+    height: 300px;
+}
+
+#mau5img {
+    width:300px;
+    height: 300px;
+    border-radius:50px;
+}
+
+#mileimg {
+    height:300px;
+    width: 180px;
 }
 
 #links ul {
