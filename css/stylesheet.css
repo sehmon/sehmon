@@ -21,6 +21,7 @@ html {
     padding:25px;
     /** White **/
     background-color:#ecf0f1;
+    border-radius:10px;
 }
 
 #header {
