@@ -86,6 +86,12 @@ html {
     overflow:auto;
 }
 
+#education a img {
+    display:block;
+    text-align:center;
+    margin: 0px auto;
+}
+
 #education h4 {
     text-align:center;
     margin: 10px 0px;
