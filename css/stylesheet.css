@@ -2,7 +2,7 @@
 
 body, div, h1, h2, h3, h4, h5, h6, p, ul, img {
     margin:0px; padding:0px; 
-    font-family: Lato, Arial;
+    font-family: Lora, Arial;
 /**    border:1px solid red; **/
 }
 
@@ -15,6 +15,13 @@ html {
 
 #main {
     background-color:#2c3e50;
+}
+
+#sectionTitle {
+    font-family:Open Sans, Arial;
+    text-align:center;
+    font-size:40px;
+    margin:20px;
 }
 
 #content > div {
@@ -130,13 +137,15 @@ html {
 }
 
 #projects h3 {
-    margin:25px;
+    margin-top:20px;
     text-align:center;
     font-size: 30px;
 }
 
 #projects p {
+    text-align:center;
     padding:15px;
+
 }
 
 #projects img {
@@ -180,3 +189,12 @@ html {
     padding-bottom:5px;
 }
 
+#careswears {
+    width:500px;
+    height:300px;
+}
+
+#linksList {
+    text-align:center;
+    font-size:20px;
+}
