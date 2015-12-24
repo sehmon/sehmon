@@ -52,11 +52,13 @@ table {
 /*~~~~~~~~~~~ Stylesheet ~~~~~~~~~~~~~*/
 
 #center {
-    width: fill-content;
-    display: inline-block;
+    width: 500px;
+    margin: 50px auto;
+    margin-top: 100px;
+    padding: 20px;
+    display: block;
     background-color: white;
     opacity: 0.7;
-    padding: 40px;
     border-radius: 20px;
 }
 
@@ -68,8 +70,11 @@ table {
 
 body {
     text-align: center;
-    padding: 10%;
     background-image: url("../stardust.png")
+}
+
+hr {
+    width: 300px;
 }
 
 h1 {
