@@ -6,7 +6,6 @@
     padding: 20px;
 }
 
-
 #center * {
     font-family: Poiret One, Arial;
     text-align: center;
@@ -34,8 +33,45 @@ p {
     font-size: 20px;
 }
 
+/* Link hover effects */
 
 a {
-    text-decoration: none;
     color: #2c3e50;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:before, a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #2c3e50;
+}
+
+a:before {
+    left: -2.5px;
+}
+
+a:after {
+    right: 2.5px;
+    background: #2c3e50;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+a:hover:before {
+    background: #2c3e50;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+}
+
+a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+    text-decoration: none;
 }
