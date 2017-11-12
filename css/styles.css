@@ -76,3 +76,5 @@ a:hover:after {
     text-decoration: none;
 }
 
+html, body {margin: 0; height: 100%; overflow: hidden}
+
