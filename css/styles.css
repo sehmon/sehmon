@@ -2,7 +2,7 @@
 
 #center {
     margin: 50px auto;
-    margin-top: 100px;
+    margin-top: 10%;
     padding: 20px;
 }
 
@@ -75,6 +75,3 @@ a:hover:after {
     transition: 0s;
     text-decoration: none;
 }
-
-html, body {margin: 0; height: 100%; overflow: hidden}
-
