@@ -48,6 +48,8 @@ if (isMobileDevice()){
   var dialup = document.getElementById('dialup-media');
   dialup.innerHTML = '<img src="img/dialup-demo.png" style="width: 90%"></img>'
 
+  var aeneas = document.getElementById('aeneas-media');
+  aeneas.innerHTML = '<img src="img/aeneas-demo.png" style="width: 90%"></img>'
 }
 
 function isMobileDevice() {

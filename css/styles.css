@@ -75,3 +75,7 @@ a:hover:after {
     transition: 0s;
     text-decoration: none;
 }
+
+.media-block {
+  margin: 40px 0;
+}
